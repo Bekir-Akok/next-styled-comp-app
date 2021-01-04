@@ -5,6 +5,7 @@ import NextLink from 'next/link';
 export const FooterContainer = styled.div`
 padding: 80px 0 10px 0;
 background: #ececec;
+z-index:998;
 `;
 
 export const FooterWrapper = styled.div`
@@ -13,14 +14,14 @@ width: 80%;
 max-width:1200px;
 @media screen and (max-width:960px ){
    width:100%;
-   margin:0 0 0 10px;
+   margin:0;
 }
 `;
 
 export const FooterNews = styled.div`
 border-bottom:1px solid rgba(7,7,7, 0.2);
 @media screen and (max-width:768px) {
-   padding: 10px;
+   padding: 0px;
 }
 `;
 

@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
     font-family: 'Source Sans Pro', sans-serif ;
+    overflow-x:hidden;
 }
 `;
 
@@ -31,6 +32,7 @@ margin-right: 10px;
 display:flex;
 align-items:center;
 justify-content: center;
+outline:none;
 
 &:hover{
     background: #fff;

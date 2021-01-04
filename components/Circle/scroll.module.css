@@ -1,0 +1,22 @@
+.scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .scroll::-webkit-scrollbar-track {
+    background:#fff;
+  }
+
+
+  .scroll::-webkit-scrollbar-thumb {
+    background: #fff; 
+     border-radius: 5px;
+  }
+
+
+  .scroll{
+
+    
+      overflow-x: scroll;
+      scroll-snap-type: x proximity;
+  
+  }

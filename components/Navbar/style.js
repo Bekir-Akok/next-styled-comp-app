@@ -8,10 +8,12 @@ align-items:center;
 background: rgba(7,7,7, .9);
 width:100%;
 height: 60px;
-padding: 10px 30px ;
+padding: 10px 30px;
+box-sizing:border-box;
 position:fixed;
 top:0;
 z-index:999;
+overflow:hidden;
 `;
 
 export const NavLogo= styled.div`
@@ -25,6 +27,8 @@ color:#fff;
 
 @media screen and (max-width:960px) {
    display:none;
+   width:0;
+   height:0;
 }
 `;
 
@@ -70,6 +74,10 @@ const StyledbarLink = styled.a`
 text-decoration:none;
 font-size:40px;
 color:red;
+
+@media screen and (max-width:578px) {
+   font-size: 35px;
+}
 `;
 
 export const MenuLink = ({ href, children }) => {
@@ -98,15 +106,16 @@ export const DropDown = styled.div`
 display:none;
 
 @media screen and (max-width:960px) {
-position:absolute;
+position:fixed;
 top:0;
-left: ${({click}) => (click ? 0 : '-1000%')};
+left: ${({click}) => (click ? 0 : '-100%')};
 width:100%;
-height: 100vh;
+height: 120vh;
 background: #000;
 padding: 15px 20px;
+box-sizing:border-box;
 display:block;
-transition:all .7s ease-in-out;
+transition:all .5s ease-in-out;
 }
 `;
 
@@ -137,10 +146,14 @@ transform: scale(1.2);
 transition:all .2s;
 color: red;
 }
+
+@media screen and (max-width:576px){
+   margin: 10px 0; 
+}
 `;
 
 export const Line = styled.div`
 border-bottom:1px solid red;
 margin: 20px 0;
-width:1000%;
+width:100%;
 `;

@@ -15,6 +15,7 @@ export const ProductImg = ({ src }) => {
 export const ProductSlider = styled.div`
 position:relative;
 height:80vh;
+overflow:hidden;
 @media screen and (max-width:960px) {
       height:60vh;
  }

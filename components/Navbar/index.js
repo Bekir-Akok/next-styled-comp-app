@@ -46,23 +46,23 @@ const NavBar = () => {
                             <IoClose onClick={handleClick} />
                         </DropUp>
                         <DropUl>
-                            <MenuLink href="/">
+                            <MenuLink href="/Product-Page">
                               <DropLi>NEW</DropLi>
                               <Line/>
                             </MenuLink>
-                            <MenuLink href="/">
+                            <MenuLink href="/Product-Page">
                               <DropLi>RACEWEAR</DropLi>
                               <Line/>
                             </MenuLink>
-                            <MenuLink href="/">
+                            <MenuLink href="/Product-Page">
                               <DropLi>STREETWEAR</DropLi>
                               <Line/> 
                             </MenuLink>
-                            <MenuLink href="/">
+                            <MenuLink href="/Product-Page">
                               <DropLi>INSIDE</DropLi>
                               <Line/> 
                             </MenuLink>
-                            <MenuLink href="/">
+                            <MenuLink href="/Product-Page">
                               <DropLi>GIFT CARD</DropLi>
                               <Line/>  
                             </MenuLink>
@@ -79,11 +79,11 @@ const NavBar = () => {
                 </MenuLink>
             </NavLogo>
             <NavMenu>
-                <MenuLink href="/"><MenuP>NEW</MenuP></MenuLink>
-                <MenuLink href="/about"><MenuP>RACEWEAR</MenuP></MenuLink>
-                <MenuLink href="/about"><MenuP>STREETWEAR</MenuP></MenuLink>
-                <MenuLink href="/about"><MenuP>INSIDE</MenuP></MenuLink>
-                <MenuLink href="/about"><MenuP>GIFTCARD</MenuP></MenuLink>
+                <MenuLink href="/Product-Page"><MenuP>NEW</MenuP></MenuLink>
+                <MenuLink href="/Product-Page"><MenuP>RACEWEAR</MenuP></MenuLink>
+                <MenuLink href="/Product-Page"><MenuP>STREETWEAR</MenuP></MenuLink>
+                <MenuLink href="/Product-Page"><MenuP>INSIDE</MenuP></MenuLink>
+                <MenuLink href="/Product-Page"><MenuP>GIFTCARD</MenuP></MenuLink>
             </NavMenu>
             <NavIcons>
                 <MenuLink href="/"><MenuIcon><GiWorld /></MenuIcon></MenuLink>

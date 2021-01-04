@@ -14,13 +14,13 @@ const ProductContent = ({ title, source, btndecs }) => {
     return (
         <>
             <ProductContainer>
-                <ProductLink href='/Product-page'>
+                <ProductLink href='/Product-Page'>
                     <ProductImg src={source} ></ProductImg>
                     <ProductOverlay></ProductOverlay>
                 </ProductLink>
                 <ProductPos>
                     <Producth1>{title}</Producth1>
-                    <Button>{btndecs}</Button>
+                    <ProductLink href='/Product-Page'><Button>{btndecs}</Button></ProductLink>
                 </ProductPos>
             </ProductContainer>
         </>
