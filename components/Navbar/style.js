@@ -27,8 +27,6 @@ color:#fff;
 
 @media screen and (max-width:960px) {
    display:none;
-   width:0;
-   height:0;
 }
 `;
 
@@ -67,7 +65,11 @@ justify-content:flex-start;
 export const MenuIcon = styled.p`
 font-size:25px;
 color:#fff;
-margin-left:30px;
+margin-right:30px;
+
+@media screen and (max-width:578px) {
+   margin-right:5px;
+}
 `;
 
 const StyledbarLink = styled.a`
