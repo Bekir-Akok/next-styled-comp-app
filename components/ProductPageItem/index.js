@@ -1,4 +1,5 @@
 import React from 'react'
+import {useStateValue} from '../ContextApi/StateProvider'
 import {
     ProductContainer,
     ProductText,
@@ -14,7 +15,23 @@ import {
 
 
 
-const ProductItem = ({origin, li1, li2, li3,li4,price,img, flex }) => {
+const ProductItem = ({id, origin, li1, li2, li3,li4,price,img, flex }) => {
+
+    const [ {basket}, dispatch] = useStateValue();
+    
+    
+    const addToBasket = () => {
+         dispatch({
+             type:'ADD_TOO_BASKET',
+             item: {
+                 id:id,
+                 price:price,
+                 origin:origin,
+                 img:img,
+             },
+         })
+    }
+
     return (
         <>
             <ProductContainer flex={flex}>
@@ -27,7 +44,7 @@ const ProductItem = ({origin, li1, li2, li3,li4,price,img, flex }) => {
                     <Productli>{li4}</Productli>
                     <ProductPrice>{price}</ProductPrice>
                     <ProductButtons>
-                        <ProductBtn1>Buy Now</ProductBtn1>
+                        <ProductBtn1 onClick={addToBasket} >Buy Now</ProductBtn1>
                         <ProductBtn2>View</ProductBtn2>
                     </ProductButtons>
                 </ProductText>

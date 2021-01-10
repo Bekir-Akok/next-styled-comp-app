@@ -1,4 +1,5 @@
 export const ProductOne = {
+    id: "1",
     origin: "ORIGIN JERSEY",
     li1: "Athletic fit",
     li2: "Flexible",
@@ -9,6 +10,7 @@ export const ProductOne = {
 };
 
 export const ProductTwo = {
+    id: "2",
     origin: "ORIGIN GLOVES",
     li1: "slip-on function",
     li2: "Rubber Dots on all fingers",
@@ -20,6 +22,7 @@ export const ProductTwo = {
 };
 
 export const ProductTheree = {
+    id: "3",
     origin: "ORIGIN PANTS",
     li1: "Tear-resistant ripstop material",
     li2: "All-way-stretch material",
@@ -30,6 +33,7 @@ export const ProductTheree = {
 };
 
 export const ProductFour = {
+    id: "4",
     origin: "PERFORMANCE SOCKS",
     li1: "Breathable through special socks construction",
     li2: "Reinforcement at heel and ball of foo",
@@ -41,6 +45,7 @@ export const ProductFour = {
 };
 
 export const ProductFive = {
+    id: "5",
     origin: "PERFORMANCE SOCKS",
     li1: "Breathable through special socks construction",
     li2: "Reinforcement at heel and ball of foo",

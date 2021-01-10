@@ -4,6 +4,7 @@ import { GiFlamingTrident, GiWorld } from 'react-icons/gi';
 import { IoClose } from 'react-icons/io5'
 import { RiMenu3Line } from 'react-icons/ri';
 import { AiOutlineShopping } from 'react-icons/ai';
+import { useStateValue } from '../ContextApi/StateProvider';
 import {
     NavFlex,
     MenuLink,
@@ -23,10 +24,12 @@ import {
 } from './style'
 
 
+
 const NavBar = () => {
 
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click)
+    const [ {basket }, dispatch] = useStateValue();
 
     return (
         <NavFlex>
@@ -87,7 +90,7 @@ const NavBar = () => {
             </NavMenu>
             <NavIcons>
                 <MenuLink href="/"><MenuIcon><GiWorld /></MenuIcon></MenuLink>
-                <MenuLink href="/card"><MenuIcon><AiOutlineShopping /></MenuIcon></MenuLink>
+                <MenuLink href="/Checkout"><MenuIcon><AiOutlineShopping />{basket.length}</MenuIcon></MenuLink>
             </NavIcons>
         </NavFlex>
     )

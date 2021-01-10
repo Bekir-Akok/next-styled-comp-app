@@ -66,6 +66,8 @@ export const MenuIcon = styled.p`
 font-size:25px;
 color:#fff;
 margin-right:30px;
+display: flex;
+align-items: center;
 
 @media screen and (max-width:578px) {
    margin-right:5px;
