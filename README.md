@@ -1,2 +1,3 @@
-# next-styled-comp-app--> https://next-styled-comp-app.vercel.app/
+# Next-styled-comp-app
+<a href="https://next-styled-comp-app.vercel.app/" >Canlı</a>
 Proje devam ediyor.
